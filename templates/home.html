@@ -22,9 +22,94 @@
 	height: 40px;
 }
 }
+      /* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin:0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: burlywood;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:darksalmon;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: cornsilk;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:right;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #97afb4;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #7a839e;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.topnav-right {
+  float: right;
+}
+}
     </style>
   </head>
   <body>
+    <div class="navbar">
+      <div class="topnav-right">
+    <a href="https://jovian.ai/staba15">HOME</a>
+    <a href="#Resume"> RESUME </a>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">EMAIL ME
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="mailto:staba.satapathy@gmail.com">email</a>
+    </div>
+  </div>
+</div>
+   
     <h1>
     <center>
       <p>I am Staba Satapathy</p>
@@ -36,17 +121,18 @@
    <p style="text-align:center;"> <img src="https://media-exp1.licdn.com/dms/image/C5603AQELwdGTttO3HQ/profile-displayphoto-shrink_200_200/0/1646906581473?e=2147483647&v=beta&t=XJE5t8-tSx27uZ2r-uE_9bACQez59YHo26ndN7Bk5Tc"></p>
     <h2>
       <center>
-      <p>About me</p>
+      <p>Staba</p>
       </center>
     </h2>
     <center>
-    <p>Working in Apple as Fraud Prevention Analyst located in Cork, Ireland.</p>
+    <p>SQL, PYTHON, TABLEAU, EXCEL, FLASK, HTML-Basics</p>
       </center>
 <center>
+  <a href="https://jovian.ai/staba15/timesjob-of-python-dataset-tmdb-34fe8/v/16">
 <input type="button" style="background-color:CornflowerBlue;color:white;width:150px;
 height:40px;" value="MY PROJECTS">
+  </a>
   </center>  
-
  
   </body>
   
