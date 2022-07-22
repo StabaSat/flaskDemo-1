@@ -13,6 +13,7 @@ Background-repeat:no-repeat;
 
 }
 
+      
       h1{font-size:30px;
          font-family: Roboto;
          font-weight:normal;
@@ -24,6 +25,7 @@ Background-repeat:no-repeat;
          color:rgb(70, 130, 180)}
        
 }  
+    
  .button_css
 {
 	background-color:goldenrod;
@@ -102,20 +104,52 @@ Background-repeat:no-repeat;
   float: right;
 }
 }
-  
-    </style>
-  </head>
-  <body>
+      p {
+  animation: 2s slideRight;
+}
+
+@keyframes slideRight{
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+div {
+  animation-duration: 5s;
+  animation-name: slideLeft;
+}
+
+@keyframes slideLeft{
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
     
 
+      
 
+  </style>
+  </head>
+  <body>
     <div class="navbar">
       <div class="topnav-right">
-    <a href="https://jovian.ai/staba15">HOME</a>
-    <a href="https://www.linkedin.com/in/staba-satapathy-a936821a0/"> RESUME </a>
+    <a href="https://jovian.ai/staba15">Home</a>
+    <a href="https://www.linkedin.com/in/staba-satapathy-a936821a0/"> LinkedIn </a>
   </div>
   <div class="dropdown">
-    <button class="dropbtn">EMAIL ME
+    <button class="dropbtn">Email me
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -135,7 +169,7 @@ Background-repeat:no-repeat;
    <p style="text-align:center;"> <img src="https://media-exp1.licdn.com/dms/image/C5603AQELwdGTttO3HQ/profile-displayphoto-shrink_200_200/0/1646906581473?e=2147483647&v=beta&t=XJE5t8-tSx27uZ2r-uE_9bACQez59YHo26ndN7Bk5Tc"></p>
     <h2>
       <center>
-      <p>Staba</p>
+      <p>Languages known</p>
       </center>
     </h2>
     <center>
@@ -144,6 +178,7 @@ Background-repeat:no-repeat;
 <center>
   <a href="https://jovian.ai/staba15/timesjob-of-python-dataset-tmdb-34fe8/v/16">
 <input type="button" style="background-color:CornflowerBlue;color:white;width:150px;
+cursor: pointer;
 height:40px;" value="MY PROJECTS">
   </a>
   </center>  
