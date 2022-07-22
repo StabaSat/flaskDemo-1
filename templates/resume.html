@@ -1,158 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-    <title>Staba Satapathy </title>
-    
-    <style>
-      
-      body {
+<head>
+<style>
 
-background:url("https://img.freepik.com/free-photo/neutral-abstract-texture-simple-background_53876-102511.jpg?w=2000");
-Background-position: Center;
-Background-repeat:no-repeat;
-}
-      
-
-      
-      h1{font-size:30px;
-         font-family: Roboto;
-         font-weight:normal;
-         color:rgb(25, 25, 112)
-      }
-      h2{font-size:30px;
-         font-family: Roboto;
-         font-weight:normal;
-         color:rgb(70, 130, 180)}
-       
-}  
+/* create the glow animation for text */ 
+.glow {
+      animation-duration: 1s;
+      animation-name: glow;
+      animation-direction: alternate;
+      animation-iteration-count: infinite; 
+    }
     
-    
- .button_css
-{
-	background-color:goldenrod;
-	color: white;
-	width: 150px;
-	height: 40px;
-}
-}
-      /* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+@keyframes glow {
+        from { text-shadow: 0 0 0px red; }
+        to { text-shadow: 0 0 20px red; }
+    }
+	
 
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
+.button {
+  border-radius: 4px;
+  background-color: deeppink;
   border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin:0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: burlywood;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color:darksalmon;
-  min-width: 60px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: cornsilk;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align:right;
-}
-.navbar {
-  overflow: hidden;
-  background-color: #fa870c;
-  font-family: Arial;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: black;
+  color: #FFFFFF;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #7a839e;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.topnav-right {
-  float: right;
-}
+  font-size: 18px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-  </style>
-  </head>
-  <body>
-    
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:active {
+  background-color: black;
+  box-shadow: 0 10px deeppink;
+  transform: translateY(4px);
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 10;
+  right: 0;
+}
+
+/* create the animation and setting properties for the loader */ 
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid deeppink;
+  border-right: 10px solid mediumvioletred;
+  border-bottom: 10px solid pink;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 
-    <div class="navbar">
-      <div class="topnav-right">
-    <a href="https://jovian.ai/staba15">Home</a>
-    <a href="https://www.linkedin.com/in/staba-satapathy-a936821a0/"> LinkedIn </a>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Email me
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="mailto:staba.satapathy@gmail.com">email</a>
-    </div>
-  </div>
-</div>
-   
-    <h1>
-    <center>
-      <p>I am Staba Satapathy</p>
-      </center>
-      </h1>
-    <center>
-      <p>Contemplative coder and analyst. Inspired by tough problems</p>
-      </center>
-   <p style="text-align:center;"> <img src="https://media-exp1.licdn.com/dms/image/C5603AQELwdGTttO3HQ/profile-displayphoto-shrink_200_200/0/1646906581473?e=2147483647&v=beta&t=XJE5t8-tSx27uZ2r-uE_9bACQez59YHo26ndN7Bk5Tc"></p>
-    <h2>
-      <center>
-      <p>Languages known</p>
-      </center>
-    </h2>
-    <center>
-    <p>SQL, PYTHON, TABLEAU, EXCEL, FLASK, HTML-Basics</p>
-      </center>
-<center>
-  <a href="https://jovian.ai/staba15/timesjob-of-python-dataset-tmdb-34fe8/v/16">
-<input type="button" style="background-color:CornflowerBlue;color:white;width:150px;
-cursor: pointer;
-height:40px;" value="MY PROJECTS">
-  </a>
-  </center>  
- 
-  </body>
-  
+html { 
+  border: 7 px solid top pink;
+  padding: 10px;
+  background: url(flowers.jpg) no-repeat top center fixed; 
+  background-size: 200px 281px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 class="glow" align="center">Animated text</h1>
+<div id="example1" align="center">
+<button class="button"><span>Animated button </span></button>
+<h2 class="glow" align="center">Custom loader</h2>
+<div class="loader" align="center"></div>
+
+</body>
 </html>
